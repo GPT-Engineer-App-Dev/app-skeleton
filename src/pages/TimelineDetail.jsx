@@ -4,45 +4,87 @@ import { ArrowLeft } from "lucide-react";
 
 const timelineEvents = [
   { 
+    id: "stone-age",
+    year: "10000 BCE - 1700 BCE", 
+    title: "Stone Age", 
+    description: "The Stone Age in Sweden began around 10,000 BCE as the ice from the last glacial period retreated. Early hunter-gatherer societies gradually developed, leaving behind stone tools and rock carvings. This period saw the introduction of agriculture and the domestication of animals, leading to more settled communities.",
+    image: "/images/stone-age.png"
+  },
+  { 
+    id: "bronze-age",
+    year: "1700 BCE - 500 BCE", 
+    title: "Bronze Age", 
+    description: "The Bronze Age in Sweden was characterized by the introduction of bronze tools and weapons, which revolutionized agriculture and warfare. This period saw the emergence of a more stratified society, with evidence of long-distance trade networks. Distinctive rock carvings and burial practices from this era provide insights into the beliefs and social structures of the time.",
+    image: "/images/bronze-age.png"
+  },
+  { 
+    id: "iron-age",
+    year: "500 BCE - 800 CE", 
+    title: "Iron Age", 
+    description: "The Iron Age in Sweden marked the development of iron technology and the emergence of Norse culture. This period saw significant social and economic changes, including the formation of small kingdoms and the development of runic writing. The later part of this era overlaps with the beginning of the Viking Age.",
+    image: "/images/iron-age.png"
+  },
+  { 
     id: "viking-age",
     year: "793-1066", 
     title: "Viking Age", 
-    description: "The Viking Age was a period in European history, especially Northern European and Scandinavian history, spanning the late 8th to late 11th centuries. Scandinavian (Norse) Vikings explored, raided, and traded throughout Europe, and reached North America. This period of Norse military, mercantile, and demographic expansion had a profound impact on the early medieval history of Scandinavia, the British Isles, France, Estonia, Kievan Rus', and Sicily.",
+    description: "The Viking Age was a period of Norse military, mercantile, and demographic expansion. Swedish Vikings, known as Varangians, mainly traveled east to Russia, Belarus, Ukraine, and the Byzantine Empire. This era saw the formation of trade networks, the foundation of Russia's first dynasty, and significant cultural exchanges.",
     image: "/images/viking-age.png"
   },
   { 
     id: "middle-ages",
     year: "1050-1523", 
     title: "Middle Ages", 
-    description: "The Middle Ages in Sweden began around 1050 with the Christianization of the country and lasted until 1523 when Gustav Vasa became King, marking the foundation of modern Sweden. This period saw the gradual consolidation of Sweden as a unified kingdom, the rise of feudalism, and significant cultural and religious changes brought about by the influence of the Catholic Church.",
+    description: "The Middle Ages in Sweden began with the country's Christianization and lasted until the coronation of Gustav Vasa. This period saw the consolidation of Sweden as a unified kingdom, the establishment of monasteries and churches, and the development of a feudal system. The Kalmar Union, uniting Sweden with Denmark and Norway, was a significant political development during this time.",
     image: "/images/middle-ages.png"
+  },
+  { 
+    id: "vasa-era",
+    year: "1523-1611", 
+    title: "Vasa Era", 
+    description: "The Vasa Era began with Gustav Vasa's coronation, marking Sweden's independence from the Kalmar Union. This period saw the Protestant Reformation in Sweden, the establishment of a hereditary monarchy, and the beginnings of Sweden's rise as a European power. The era was characterized by centralization of power and economic reforms.",
+    image: "/images/vasa-era.png"
   },
   { 
     id: "swedish-empire",
     year: "1611-1721", 
     title: "Swedish Empire", 
-    description: "The Swedish Empire was a European great power that exercised territorial control over much of the Baltic region during the 17th and early 18th centuries. At its height, the Empire encompassed modern Sweden, Finland, Estonia, Latvia, and parts of Norway, Denmark, and Germany. This period, often referred to as Sweden's Age of Greatness (Stormaktstiden), was characterized by Sweden's emergence as one of the most powerful countries in Europe.",
+    description: "The Swedish Empire was a great power in northern Europe and the Baltic region. Sweden's involvement in the Thirty Years' War led to significant territorial gains. This period, often called the 'Age of Greatness' (Stormaktstiden), saw Sweden control much of the Baltic region. The era ended with the Great Northern War and the death of Charles XII.",
     image: "/images/swedish-empire.png"
   },
   { 
     id: "age-of-liberty",
-    year: "1718-1809", 
+    year: "1718-1772", 
     title: "Age of Liberty", 
-    description: "The Age of Liberty in Sweden was a period of parliamentary governance and increased civil rights, lasting from 1719 to 1772. Following the death of Charles XII, Sweden's parliament (Riksdag) and council gained significant power, reducing the authority of the monarchy. This era saw the development of Sweden's first political parties, the Hats and Caps, and a flourishing of political debate and scientific advancement.",
+    description: "The Age of Liberty in Sweden was characterized by increased parliamentary power at the expense of the monarchy. This period saw the development of strong political parties (the Hats and Caps) and a flourishing of political debate. Despite its name, this era was marked by corruption and political instability.",
     image: "/images/age-of-liberty.png"
+  },
+  { 
+    id: "gustavian-era",
+    year: "1772-1809", 
+    title: "Gustavian Era", 
+    description: "The Gustavian Era, named after King Gustav III, saw a return to royal absolutism. Gustav III's coup d'état in 1772 ended the Age of Liberty. This period was characterized by enlightened absolutism, with the king promoting arts, literature, and science. The era ended with the Finnish War and the deposition of Gustav IV Adolf.",
+    image: "/images/gustavian-era.png"
   },
   { 
     id: "swedish-norwegian-union",
     year: "1814-1905", 
     title: "Swedish-Norwegian Union", 
-    description: "The Swedish–Norwegian Union was a personal union between the kingdoms of Sweden and Norway from 1814 to 1905. Following the Napoleonic Wars, Norway was ceded from Denmark to Sweden. The union was peacefully dissolved in 1905 after growing Norwegian nationalism and desire for independence. Despite sharing a monarch, both countries maintained separate constitutions, laws, legislatures, administrations, state churches, armed forces, and currencies throughout the union.",
+    description: "The Swedish–Norwegian Union was a personal union between the kingdoms of Sweden and Norway. While sharing a monarch, both countries maintained separate constitutions, laws, and institutions. The union was peacefully dissolved in 1905 following growing Norwegian nationalism and a desire for full independence.",
     image: "/images/swedish-norwegian-union.png"
+  },
+  { 
+    id: "industrialization",
+    year: "1870-1914", 
+    title: "Industrialization", 
+    description: "Sweden's industrialization period saw rapid economic and social changes. The country transformed from an agrarian economy to an industrial one, with significant growth in industries such as timber, mining, and engineering. This era also saw large-scale emigration to North America due to population growth and limited economic opportunities in rural areas.",
+    image: "/images/industrialization.png"
   },
   { 
     id: "modern-sweden",
     year: "1905-Present", 
     title: "Modern Sweden", 
-    description: "Modern Sweden emerged as a constitutional monarchy and parliamentary democracy in the early 20th century. After remaining neutral during both World Wars, Sweden developed a model of welfare state known as the 'Swedish Model', characterized by a high standard of living, extensive social benefits, and a strong emphasis on egalitarianism. Today, Sweden is known for its progressive social policies, commitment to sustainability, and innovative technology sector.",
+    description: "Modern Sweden emerged as a constitutional monarchy and parliamentary democracy. After remaining neutral during both World Wars, Sweden developed the 'Swedish Model' of welfare state. The country is known for its progressive social policies, commitment to sustainability, and innovative technology sector. Sweden joined the European Union in 1995 but remains outside the Eurozone.",
     image: "/images/modern-sweden.png"
   },
 ];
