@@ -1,9 +1,10 @@
-import { Home, Info, Mail, Book } from "lucide-react";
+import { Home, Info, Mail, Book, Crown } from "lucide-react";
 import Index from "./pages/Index.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import Timeline from "./pages/Timeline.jsx";
 import TimelineDetail from "./pages/TimelineDetail.jsx";
+import KingsOfSweden from "./pages/KingsOfSweden.jsx";
 
 export const navItems = [
   {
@@ -23,6 +24,12 @@ export const navItems = [
     to: "/timeline",
     icon: <Book className="h-4 w-4" />,
     page: <Timeline />,
+  },
+  {
+    title: "Kings of Sweden",
+    to: "/kings",
+    icon: <Crown className="h-4 w-4" />,
+    page: <KingsOfSweden />,
   },
   {
     title: "Contact",
