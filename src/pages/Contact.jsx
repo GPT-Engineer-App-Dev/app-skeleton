@@ -12,6 +12,10 @@ const Contact = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
+      <p className="text-xl mb-6">
+        Have questions about Swedish history? Want to contribute to our historical knowledge? 
+        Get in touch with us!
+      </p>
       <form onSubmit={handleSubmit} className="space-y-4 max-w-md">
         <div>
           <label htmlFor="name" className="block text-sm font-medium mb-1">Name</label>
@@ -23,7 +27,7 @@ const Contact = () => {
         </div>
         <div>
           <label htmlFor="message" className="block text-sm font-medium mb-1">Message</label>
-          <Textarea id="message" placeholder="Your message" required />
+          <Textarea id="message" placeholder="Your question or comment about Swedish history" required />
         </div>
         <Button type="submit">Send Message</Button>
       </form>

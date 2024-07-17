@@ -1,7 +1,8 @@
-import { Home, Info, Mail } from "lucide-react";
+import { Home, Info, Mail, Book } from "lucide-react";
 import Index from "./pages/Index.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
+import Timeline from "./pages/Timeline.jsx";
 
 export const navItems = [
   {
@@ -15,6 +16,12 @@ export const navItems = [
     to: "/about",
     icon: <Info className="h-4 w-4" />,
     page: <About />,
+  },
+  {
+    title: "Timeline",
+    to: "/timeline",
+    icon: <Book className="h-4 w-4" />,
+    page: <Timeline />,
   },
   {
     title: "Contact",
