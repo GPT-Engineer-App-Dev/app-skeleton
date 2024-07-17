@@ -4,6 +4,27 @@ import { Link } from "react-router-dom";
 
 const timelineEvents = [
   { 
+    id: "stone-age",
+    year: "10000 BCE - 1700 BCE", 
+    title: "Stone Age", 
+    description: "Early human settlements in Sweden",
+    image: "/images/stone-age.png"
+  },
+  { 
+    id: "bronze-age",
+    year: "1700 BCE - 500 BCE", 
+    title: "Bronze Age", 
+    description: "Introduction of bronze tools and weapons",
+    image: "/images/bronze-age.png"
+  },
+  { 
+    id: "iron-age",
+    year: "500 BCE - 800 CE", 
+    title: "Iron Age", 
+    description: "Development of iron technology and Norse culture",
+    image: "/images/iron-age.png"
+  },
+  { 
     id: "viking-age",
     year: "793-1066", 
     title: "Viking Age", 
@@ -18,6 +39,13 @@ const timelineEvents = [
     image: "/images/middle-ages.png"
   },
   { 
+    id: "vasa-era",
+    year: "1523-1611", 
+    title: "Vasa Era", 
+    description: "Reign of the Vasa dynasty and Protestant Reformation",
+    image: "/images/vasa-era.png"
+  },
+  { 
     id: "swedish-empire",
     year: "1611-1721", 
     title: "Swedish Empire", 
@@ -26,10 +54,17 @@ const timelineEvents = [
   },
   { 
     id: "age-of-liberty",
-    year: "1718-1809", 
+    year: "1718-1772", 
     title: "Age of Liberty", 
     description: "Era of increased parliamentary power",
     image: "/images/age-of-liberty.png"
+  },
+  { 
+    id: "gustavian-era",
+    year: "1772-1809", 
+    title: "Gustavian Era", 
+    description: "Enlightened absolutism under Gustav III",
+    image: "/images/gustavian-era.png"
   },
   { 
     id: "swedish-norwegian-union",
@@ -37,6 +72,13 @@ const timelineEvents = [
     title: "Swedish-Norwegian Union", 
     description: "Personal union between Sweden and Norway",
     image: "/images/swedish-norwegian-union.png"
+  },
+  { 
+    id: "industrialization",
+    year: "1870-1914", 
+    title: "Industrialization", 
+    description: "Rapid industrial and economic growth",
+    image: "/images/industrialization.png"
   },
   { 
     id: "modern-sweden",
@@ -56,7 +98,7 @@ const Timeline = () => {
           <div className="absolute left-9 top-0 h-full w-0.5 bg-gray-200"></div>
           {timelineEvents.map((event, index) => (
             <div key={index} className="mb-8 flex items-center">
-              <div className="flex h-20 w-20 items-center justify-center rounded-full bg-blue-500 text-white">
+              <div className="flex h-20 w-20 items-center justify-center rounded-full bg-blue-500 text-white text-xs text-center">
                 {event.year}
               </div>
               <Link to={`/timeline/${event.id}`} className="ml-4 flex-1">
